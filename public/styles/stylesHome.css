@@ -1,0 +1,350 @@
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: #8B10AE;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #8B10AE;
+}
+ul{
+    list-style: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, button{
+    background-color: #8B10AE;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .menuTop{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px 25px 10px;
+}
+.container .menuTop img + span{
+    margin-left: 10px;
+}
+.container .menuTop span{
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: bold;
+}
+.Main{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex: 1;
+}
+.Main .Menu + .content{
+    margin-left: 200px;
+}
+.Menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Menu .infor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.Menu .infor img{
+    height: 350px;
+    width: 350px;
+    margin-bottom: 10px;
+}
+.Menu .infor ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.Menu .infor ul li h1 + span{
+    margin-left: 10px;
+}
+.Menu .infor h1{
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    color: #ffffffcc;
+    font-family: 'Quicksand', sans-serif;
+}
+.Menu .infor span{
+    font-weight: bold;
+    font-size: 30px;
+    color: #ffffff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.Menu .list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Menu .list ul{
+    margin-bottom: 10px;
+}
+.Menu .list ul li{
+    margin-bottom: 10px;
+}
+.Menu .list ul li button{
+    height: 40px;
+    width: 450px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px 30px 30px;
+    border: 1px solid #ffffffcc;
+    color: #ffffffcc;
+    transition: .5s linear;
+}
+.Menu .list ul li button:hover{
+    cursor: pointer;
+    color: #8B10AE;
+    background-color: #ffffff;
+    border: 1px solid #8B10AE;
+}
+.container .exit button{
+    height: 40px;
+    width: 450px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px 30px 30px;
+    border: 1px solid #ffffffcc;
+    color: #ffffffcc;
+    margin-bottom: 10px;
+    transition: .5s linear;
+}
+.container .exit button:hover{
+    cursor: pointer;
+    background-color: #a10606;
+    border: 1px solid #8B10AE;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 1350px;
+}
+.content #box{
+    background-color: #ffffff;
+    width: 500px;
+    height: 450px;
+    margin-bottom: 10px;
+}
+.content #box:hover{
+    background-color: #ffffffe8;
+}
+.content i{
+    font-size: 25px;
+    color: #a39d9dea;
+}
+.content .status{
+    display: flex;
+    flex-direction: column;
+}
+.content .status .statusContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 35px 25px 25px 25px;
+    height: 80%;
+}
+.content .status .statusContainer .containerValue{
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+.content .status .statusContainer .containerValue i{
+    margin-bottom: 55px;
+}
+.content .status .statusContainer .containerValue h3{
+    color: #2e86eb;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+}
+.content .status .statusContainer .containerValue h1{
+    color: #2e86eb;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+}
+.content .status .statusContainer .containerValue span{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.content .status .statusContainer .containerValue span h4 + strong{
+    margin-left: 10px;
+}
+.content .status .statusContainer .containerValue span strong{
+    color: #00f314f1;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content .status .statusContainer .containerColor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 6px;
+    border-radius: 3px;
+}
+.content .status .statusContainer .containerColor .one{
+    background-color: #e98008;
+    width: 6px;
+    height: 20%;
+    border-radius: 3px 3px 0 0;
+}
+.content .status .statusContainer .containerColor .second{
+    background-color: #2e86eb;
+    width: 6px;
+    height: 35%;
+    border-radius: 0;
+}
+.content .status .statusContainer .containerColor .third{
+    background-color: #00f314f1;
+    width: 6px;
+    height: 45%;
+    border-radius: 0 0 3px 3px;
+}
+.content .status footer{
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+    background-color: #ebe6e6;
+    color: #888888;
+}
+.content .status footer i{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.content .status footer span{
+    font-size: 15px;
+}
+.content .account{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.content .account header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px 10px 20px;
+}
+.content .account header i{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.content .account main{
+    display: flex;
+    padding: 0 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+.content .account main span{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #a39d9dea;
+    margin-bottom: 10px;
+}
+.content .account main strong{
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111111;
+}
+.content .account footer{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebe6e6;
+    color: #888888;
+}
+.content .account footer i{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.content .account footer span{
+    font-size: 15px;
+}
+.content .rewards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 0;
+}
+.content .rewards i{
+    font-size: 40px;
+}
+.content .rewards .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content .rewards .text h1 strong{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content .rewards .text h1{
+    margin-bottom: 15px;
+}
+.content .rewards .text p{
+    width: 300px;
+    font-size: 16px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content .rewards button{
+    height: 40px;
+    width: 400px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #8B10AE;
+    color: #8B10AE;
+    transition: .5s linear;
+}
+.content .rewards button:hover{
+    cursor: pointer;
+    background-color: #8B10AE;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
